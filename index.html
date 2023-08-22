@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+    <html lang="PT-BR">
+        <head>
+            <!--CABEÇALHO-->
+            <!--CONFIGURAÇÃO DOS CARACTERES DA PÁGINA-->
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!--TÍTULO DA PÁGINA-->
+            <title> SOMELIST :)</title> 
+            <!--RELACIONANDO O CSS AO ARQUIVO HTML-->
+            <link rel="stylesheet" href="style.css"> 
+            <link rel="stylesheet" href="styles/style.css", media="all">
+        </head>
+
+        <body>
+        <div id="conteudo">
+            <!--CONTEÚDO DO CABEÇALHO DA PÁGINA-->
+            <header> <!---cabeçario-->
+                <h1 class="title" href="/">Somelist :)</h1>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div> 
+                <nav class="nav-bar"> <!--nav: barra de navegação, ao clicar vai direcionar para outra pagina-->
+                    <!--<a class="logo" href="/">link aqui</a> :exemplo do link (?)-->
+                    
+                    <ul> <!--ul:lista ordenada por pontos "topicos"-->
+                        <li><a href="index.html"> Início </a></li> <!--li:conteudo da lista, a href: colocar link-->
+                        <li><a href="arquivo.html"> Recomendações </a></li>
+                        <li><a href="https://www.netflix.com/br/"> Netflix </a></li>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">Cadastre-se</button>
+                            <div id="myDropdown" class="dropdown-content">
+                              <a href="cadastro.html">Fazer cadastro</a>
+                              <a href="login.html">Fazer login</a>
+                            </div>
+                          </div>
+                 </ul>
+                </nav>
+               </header> 
+
+               <main>
+                 <!--RESTO DA PÁGINA-->
+              <div class="pagina">
+                <div class="texto">
+            <h2 class="subtitle"> Olá, eu sou o Bernardo e esse é um ambiente de recomendações de<br>
+                                    filmes e séries pra você que acabou de assinar a NETFLIX. </h2> <!--título c/ fonte menor-->
+
+            <p class="quemsomos">  As plataformas de Streaming estão presentes popularmente em nosso dia a dia, com a acessiblidade e conforto de sua casa
+                                    para assistir diversos filmes, séries, desenhos animatos e demais conteúdos de entreterimento. Por este fato, nosso site
+                                    oferece um ambiente para você que não quer perder tempo na timeline da Netflix, entre outros. </p> 
+            
+             <p class="clique"> Clique em "RECOMENDAÇÕES  DE FILMES E SÉRIES"e conheça as próximas histórias e personagens da sua vida.</p>  
+             <a href="arquivo.html"><button class="botao">Recomendações de filmes e séries</button></a>
+             <button> 
+            </div>   
+        
+         <div class="img">
+            <img src="IMG/WhatsApp Image 2023-07-30 at 7.29.27 PM.jpeg" alt="" width="500px">              
+               
+             </div>
+         </div>
+        </main>
+           
+
+    </div>
+    <div id="content">
+<footer class="footer"> 
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+    <div class="Rodapé">
+        <p class="introdução">  CONFIRA UMA LISTA DE RECOMENDAÇÕES PRODUZIDA POR BERNARDO MATOS GUIMARÃES.
+            É IMPORTANTE MENCIONAR QUE ESSA É UMA OPNIÃO PESSOAL E AMADORA, NÃO FORAM ANALISADAS TÉCNICAS DA
+            CINEMATOGRAFIA. </P>
+            <p><a href="https://www.instagram.com/netflixbrasil/"> INSTAGRAM NETFLIX BRASIL</a></p>
+            <p><a href="https://www.instagram.com/BEERNARDOMATOS/"> CONHEÇA O BERNARDO :)</a></p>
+    </div>
+    <script>
+        
+    function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+
+    window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+        }
+        } 
+    }
+    </script>
+    </footer>
+
+</div>
+</body>
+
+</html>
+    
+            

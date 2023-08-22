@@ -1,0 +1,76 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+
+<head>
+
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cadastro </title>
+    <link rel="stylesheet" href="style.css"> 
+            <link rel="stylesheet" href="styles/style.css", media="all">
+    <style>
+       
+    </style>
+    
+    
+</head>
+<body>
+
+    <header>
+        <!--CONTEÚDO DO CABEÇALHO DA PÁGINA-->
+        <header> <!---cabeçario-->
+            <h1 class="title" href="/">Somelist :)</h1>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div> 
+            <nav class="nav-bar"> <!--nav: barra de navegação, ao clicar vai direcionar para outra pagina-->
+                <!--<a class="logo" href="/">link aqui</a> :exemplo do link (?)-->
+                
+                <ul> <!--ul:lista ordenada por pontos "topicos"-->
+                    <li><a href="index.html"> Início </a></li> <!--li:conteudo da lista, a href: colocar link-->
+                    <li><a href="arquivo.html"> Recomendações </a></li>
+                    <li><a href="https://www.netflix.com/br/"> Netflix </a></li>
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">Cadastre-se</button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="cadastro.html">Fazer cadastro</a>
+                          <a href="login.html">Fazer login</a>
+                        </div>
+                      </div>
+             </ul>
+            </nav>
+           </header> 
+        
+    </header>
+    <Main>
+        <form action=""  method="POST">
+            <label for="email" id="cadastro" >Email:</label>
+            <br>
+            <input type="email" id="cadastro" placeholder="" name= "email_usuario" required>
+            <br>    
+            <label for="password" id="cadastro" name="senha" required>Senha:</label>
+            <br>
+            <input id="cadastro"  type="password"> 
+            <br>
+            <label for="passwordconfirm" id="cadastro" name="csenha" required>Confimar senha:</label>
+            <br>
+            <input id="cadastro" type="passwordconfirm">
+            <p>
+            <input id="cadastro" type="submit" value="Enviar"></p>
+
+           <!-- <button type="submit">Entrar2</button> -->
+
+
+        </form>
+        
+    </Main>
+    <footer>
+        <script>
+            
+        </script> <!--O script fica no rodapé, pq?Organização-->
+    </footer>
+</body>
+</html>

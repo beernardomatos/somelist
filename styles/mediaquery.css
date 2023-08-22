@@ -1,0 +1,47 @@
+@media only screen and(max-widrh: 2320px) {
+    header {
+        padding: 0 50px;
+    }
+}
+@media only screen and(max-widrh: 1100px) {
+    header {
+        padding: 0 30px;
+    }
+}
+@media only screen and(max-widrh: 900px) {
+    .hamburguer {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburguer .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 6px 0;
+    }
+    .nav-bar {
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: rgb(11, 31, 61);
+        transition: 0.2s;
+        overflow:hidden ;
+    }
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+    .nav-bar ul li a {
+        margin-bottom: 12px;
+    }
+}
